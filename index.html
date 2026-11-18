@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenure — Clothes you keep</title>
+<meta name="description" content="Tenure. Tailored menswear cut close to the body, in cloth that lasts for decades.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announcement" role="region" aria-label="Announcement">
+  <p>Complimentary alterations on every tailored piece</p>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <nav class="nav-left" aria-label="Primary">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collection">Capsule 01</a></li>
+        <li><a href="#tailoring">Tailoring</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+      </ul>
+    </nav>
+    <a href="#top" class="wordmark" aria-label="Tenure, home">TENURE</a>
+    <div class="nav-right">
+      <a href="#story" class="nav-text-link">Our Story</a>
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="Shopping bag, 0 items">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="bag-count" id="bagCount" aria-hidden="true">0</span>
+      </button>
+    </div>
+  </div>
+  <div class="search-panel" id="searchPanel" hidden>
+    <label for="searchInput" class="visually-hidden">Search Tenure</label>
+    <input id="searchInput" type="search" placeholder="Search the collection" autocomplete="off">
+    <div class="search-results" id="searchResults" aria-live="polite"></div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile" hidden>
+  <ul>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#collection">Capsule 01</a></li>
+    <li><a href="#tailoring">Tailoring</a></li>
+    <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#story">Our Story</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Capsule 01">
+    <img src="images/looks/look-courtyard.jpg" alt="A man in a tobacco suede harrington jacket walking through a stone courtyard" class="hero-img">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow light">Capsule 01 · Autumn / Winter</p>
+      <h1>Clothes you keep.</h1>
+      <a href="#shop" class="btn btn-light">Discover the collection</a>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement reveal" id="story">
+    <p class="eyebrow">The House of Tenure</p>
+    <p class="statement-text">The right clothes change how you stand, how you speak, how a room receives you. We cut every piece close to the body, in cloth made to outlast trends, and the people who wear it.</p>
+  </section>
+
+  <!-- EDITORIAL SPLIT -->
+  <section class="split" id="collection">
+    <figure class="split-media reveal">
+      <img src="images/looks/look-arrival.jpg" alt="A man in a camel overcoat over a navy suit walking through a wood-panelled hall" loading="lazy">
+    </figure>
+    <div class="split-copy reveal">
+      <p class="eyebrow">The Arrival</p>
+      <h2>Walk into the room that decides things.</h2>
+      <p>The Tenure Overcoat over the Envoy Suit. A suppressed waist, a soft shoulder, and cloth that holds its line from the first meeting to the last.</p>
+      <div class="split-links">
+        <button class="text-link" data-open="overcoat">The Tenure Overcoat</button>
+        <button class="text-link" data-open="envoy-suit">The Envoy Suit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section class="carousel-section" aria-labelledby="essentialsTitle">
+    <div class="section-head">
+      <h2 id="essentialsTitle">The Essentials</h2>
+      <div class="carousel-controls">
+        <button class="icon-btn round" id="carPrev" aria-label="Previous products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="icon-btn round" id="carNext" aria-label="Next products"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="carousel" id="carousel" tabindex="0" aria-label="Essential pieces, scroll horizontally"></div>
+  </section>
+
+  <!-- TWO-UP EDITORIAL -->
+  <section class="duo">
+    <article class="duo-card reveal">
+      <img src="images/looks/look-harbour.jpg" alt="A man in a cream knitted polo and grey trousers seated on a wooden boat at sea" loading="lazy">
+      <div class="duo-copy">
+        <p class="eyebrow light">The Harbour</p>
+        <h3>Late lunches by the water</h3>
+        <button class="text-link light" data-open="harbour-polo">Shop the Harbour Polo</button>
+      </div>
+    </article>
+    <article class="duo-card reveal">
+      <img src="images/looks/look-weekend.jpg" alt="A man in an oatmeal cable-knit sweater over a blue oxford shirt outside a stone house" loading="lazy">
+      <div class="duo-copy">
+        <p class="eyebrow light">The Weekend</p>
+        <h3>Coffee, a gallery, dinner with family</h3>
+        <button class="text-link light" data-open="heritage-cable">Shop the Heritage Cable</button>
+      </div>
+    </article>
+  </section>
+
+  <!-- SHOP GRID -->
+  <section class="shop" id="shop" aria-labelledby="shopTitle">
+    <div class="shop-head">
+      <div>
+        <p class="eyebrow">Capsule 01</p>
+        <h2 id="shopTitle">Shop the collection</h2>
+      </div>
+      <p class="shop-count" id="shopCount" aria-live="polite"></p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter by category" id="filters"></div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- TAILORING -->
+  <section class="tailoring" id="tailoring">
+    <figure class="tailoring-media reveal">
+      <img src="images/looks/look-envoy.jpg" alt="A man in a midnight navy two-button suit with a pale blue shirt" loading="lazy">
+    </figure>
+    <div class="tailoring-copy reveal">
+      <p class="eyebrow">Cut to the body</p>
+      <h2>Tailoring first. Always.</h2>
+      <ol class="pillars">
+        <li>
+          <span class="pillar-num">01</span>
+          <div><h3>A defined waist</h3><p>Every jacket, coat, shirt and knit is shaped through the body. Darts, suppression and side adjusters, never boxy.</p></div>
+        </li>
+        <li>
+          <span class="pillar-num">02</span>
+          <div><h3>A clean shoulder</h3><p>High armholes and soft, natural shoulders so the cloth moves with you and settles back into line.</p></div>
+        </li>
+        <li>
+          <span class="pillar-num">03</span>
+          <div><h3>Cloth for decades</h3><p>Wool-cashmere, Super 120s wool, merino, suede and heavy twill, chosen to wear in, not out.</p></div>
+        </li>
+      </ol>
+      <p class="tailoring-note">Complimentary alterations on every tailored piece.</p>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="lookbook" id="lookbook" aria-labelledby="lookbookTitle">
+    <div class="section-head centered">
+      <p class="eyebrow">Lookbook</p>
+      <h2 id="lookbookTitle">Ways to wear Tenure</h2>
+    </div>
+    <div class="lookbook-grid">
+      <button class="look reveal" data-open="ike-jacket"><img src="images/looks/look-ike.jpg" alt="A man in a black cropped Eisenhower jacket and black trousers in a loft" loading="lazy"><span>Black on Black</span></button>
+      <button class="look reveal" data-open="overcoat"><img src="images/looks/look-overcoat.jpg" alt="A man in a camel overcoat, cable-knit sweater and grey pleated trousers" loading="lazy"><span>The Negotiator</span></button>
+      <button class="look reveal" data-open="harrington"><img src="images/looks/look-harrington-villa.jpg" alt="A man in a tobacco suede harrington and white t-shirt in a stone courtyard" loading="lazy"><span>The Uniform</span></button>
+      <button class="look reveal" data-open="field-jacket"><img src="images/looks/look-field.jpg" alt="A man in an olive field jacket, cable-knit sweater and grey trousers" loading="lazy"><span>The Mission</span></button>
+      <button class="look reveal" data-open="work-trouser"><img src="images/looks/look-harrington-studio.jpg" alt="A man in a suede harrington, white t-shirt and black trousers" loading="lazy"><span>Off the Clock</span></button>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" aria-labelledby="newsTitle">
+    <h2 id="newsTitle">Join the waitlist</h2>
+    <p>Early access to the first drop, and nothing you didn't ask for.</p>
+    <form id="newsForm" class="news-form" novalidate>
+      <label for="newsEmail" class="visually-hidden">Email address</label>
+      <input id="newsEmail" type="email" placeholder="Email address" required autocomplete="email">
+      <button type="submit" class="btn btn-dark">Join</button>
+    </form>
+    <p class="form-msg" id="newsMsg" aria-live="polite"></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <p class="wordmark small">TENURE</p>
+      <p>Clothes you keep.</p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul><li><a href="#shop">Outerwear</a></li><li><a href="#shop">Tailoring</a></li><li><a href="#shop">Knitwear</a></li><li><a href="#shop">Essentials</a></li></ul>
+    </div>
+    <div>
+      <h3>Client Services</h3>
+      <ul><li><a href="#tailoring">Alterations</a></li><li><a href="#top">Shipping &amp; Returns</a></li><li><a href="#top">Size Guide</a></li><li><a href="#top">Contact</a></li></ul>
+    </div>
+    <div>
+      <h3>The House</h3>
+      <ul><li><a href="#story">Our Story</a></li><li><a href="#tailoring">Craft</a></li><li><a href="#lookbook">Lookbook</a></li></ul>
+    </div>
+  </div>
+  <p class="legal">© Tenure. All rights reserved.</p>
+</footer>
+
+<!-- PRODUCT DIALOG -->
+<div class="overlay" id="overlay" hidden></div>
+<div class="product-dialog" id="productDialog" role="dialog" aria-modal="true" aria-labelledby="dlgName" hidden>
+  <button class="icon-btn dialog-close" id="dialogClose" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="dialog-media">
+    <img id="dlgImg" src="" alt="">
+    <div class="dialog-thumbs" id="dlgThumbs"></div>
+  </div>
+  <div class="dialog-info">
+    <p class="eyebrow" id="dlgCat"></p>
+    <h2 id="dlgName"></h2>
+    <p class="dlg-price" id="dlgPrice"></p>
+    <p class="dlg-desc" id="dlgDesc"></p>
+    <dl class="dlg-specs">
+      <dt>Fabric</dt><dd id="dlgFabric"></dd>
+      <dt>Colour</dt><dd id="dlgColour"></dd>
+    </dl>
+    <fieldset class="sizes">
+      <legend>Size</legend>
+      <div class="size-options" id="sizeOptions"></div>
+    </fieldset>
+    <button class="btn btn-dark full" id="addToBag">Add to bag</button>
+    <p class="form-msg" id="dlgMsg" aria-live="polite"></p>
+    <p class="dlg-alter">Complimentary alterations included.</p>
+  </div>
+</div>
+
+<!-- BAG DRAWER -->
+<aside class="bag-drawer" id="bagDrawer" aria-labelledby="bagTitle" hidden>
+  <div class="bag-head">
+    <h2 id="bagTitle">Your bag</h2>
+    <button class="icon-btn" id="bagClose" aria-label="Close bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <ul class="bag-items" id="bagItems"></ul>
+  <div class="bag-foot">
+    <p class="bag-empty" id="bagEmpty">Your bag is empty.</p>
+    <button class="btn btn-dark full" id="checkoutBtn" disabled>Checkout coming soon</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
