@@ -29,6 +29,7 @@
         <li><a href="#collection">Capsule 01</a></li>
         <li><a href="#tailoring">Tailoring</a></li>
         <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#women">Women</a></li>
       </ul>
     </nav>
     <a href="#top" class="wordmark" aria-label="Tenure, home">TENURE</a>
@@ -56,6 +57,7 @@
     <li><a href="#collection">Capsule 01</a></li>
     <li><a href="#tailoring">Tailoring</a></li>
     <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#women">Women</a></li>
     <li><a href="#story">Our Story</a></li>
   </ul>
 </nav>
@@ -181,6 +183,33 @@
     </div>
   </section>
 
+  <!-- WOMEN -->
+  <section class="women" id="women" aria-labelledby="womenTitle">
+    <div class="women-head reveal">
+      <p class="eyebrow">Tenure Women</p>
+      <h2 id="womenTitle">The same rules, cut for her</h2>
+      <p>Strong shoulders, a defined waist and cloth that lasts. Tailoring that makes the room take notice.</p>
+    </div>
+    <div class="women-grid">
+      <figure class="woman reveal">
+        <img src="images/women/women-brownstone.jpg" alt="A woman in a charcoal double-breasted blazer, cream turtleneck and camel wide-leg trousers on a brownstone street in autumn" loading="lazy">
+        <figcaption><span class="w-name">The Brownstone</span><span class="w-desc">Charcoal double-breasted blazer, cream turtleneck, camel trousers</span></figcaption>
+      </figure>
+      <figure class="woman reveal">
+        <img src="images/women/women-commute.jpg" alt="A woman in a camel overcoat over a grey V-neck and white shirt with dark jeans on a cobblestone street" loading="lazy">
+        <figcaption><span class="w-name">The Commute</span><span class="w-desc">Camel overcoat, grey V-neck over a white shirt, dark denim</span></figcaption>
+      </figure>
+      <figure class="woman reveal">
+        <img src="images/women/women-meeting.jpg" alt="A woman in an olive overcoat, grey shirt and black trousers carrying a black leather briefcase" loading="lazy">
+        <figcaption><span class="w-name">The Meeting</span><span class="w-desc">Olive overcoat, grey shirt, black tailored trousers</span></figcaption>
+      </figure>
+      <figure class="woman reveal">
+        <img src="images/women/women-spring.jpg" alt="A woman in a long ivory coat, blue shirt and grey trousers walking past spring blossoms" loading="lazy">
+        <figcaption><span class="w-name">The Spring Edit</span><span class="w-desc">Ivory long coat, blue shirt, grey trousers</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- NEWSLETTER -->
   <section class="newsletter" aria-labelledby="newsTitle">
     <h2 id="newsTitle">Join the waitlist</h2>
@@ -230,6 +259,7 @@
     <h2 id="dlgName"></h2>
     <p class="dlg-price" id="dlgPrice"></p>
     <p class="dlg-desc" id="dlgDesc"></p>
+    <p class="dlg-women" id="dlgWomen" hidden>Also cut for women. See the styled photos below the main image.</p>
     <dl class="dlg-specs">
       <dt>Fabric</dt><dd id="dlgFabric"></dd>
       <dt>Colour</dt><dd id="dlgColour"></dd>
@@ -253,6 +283,7 @@
   <ul class="bag-items" id="bagItems"></ul>
   <div class="bag-foot">
     <p class="bag-empty" id="bagEmpty">Your bag is empty.</p>
+    <p class="bag-total" id="bagTotal" hidden><span>Subtotal</span><span id="bagTotalVal"></span></p>
     <button class="btn btn-dark full" id="checkoutBtn" disabled>Checkout coming soon</button>
   </div>
 </aside>

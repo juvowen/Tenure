@@ -3,49 +3,49 @@
    Leave it as null to show "Price coming soon". */
 
 const PRODUCTS = [
-  { id:'overcoat', name:'The Tenure Overcoat', cat:'Outerwear', colour:'Camel', hex:'#B08A5E', fabric:'Wool-cashmere, 80/20', price:null,
-    img:'images/products/overcoat.jpg', look:'images/looks/look-overcoat.jpg', sizes:'suit',
+  { id:'overcoat', name:'The Tenure Overcoat', cat:'Outerwear', colour:'Camel', hex:'#B08A5E', fabric:'Wool-cashmere, 80/20', price:200,
+    img:'images/products/overcoat.jpg', look:'images/looks/look-overcoat.jpg', sizes:'suit', women:[{src:'images/women/women-commute.jpg', contain:true, alt:'The Tenure Overcoat in camel, worn by a woman over a grey V-neck and dark denim'}],
     desc:'Double-breasted with a suppressed waist that flares into the skirt. Soft natural shoulder, hand-finished lapels. The piece the house is named for.' },
-  { id:'envoy-suit', name:'The Envoy Suit', cat:'Tailoring', colour:'Midnight navy', hex:'#1F2A3D', fabric:'Super 120s wool', price:null,
+  { id:'envoy-suit', name:'The Envoy Suit', cat:'Tailoring', colour:'Midnight navy', hex:'#1F2A3D', fabric:'Super 120s wool', price:250,
     img:'images/products/envoy-suit.jpg', look:'images/looks/look-envoy.jpg', sizes:'suit',
     desc:'Two-button with a sharply suppressed waist, high armhole and slim notch lapel. Half-canvassed front, working cuffs, pick-stitched edges. Built for the entrance.' },
-  { id:'ike-jacket', name:'The Ike Jacket', cat:'Outerwear', colour:'Black', hex:'#1E1D1B', fabric:'Heavy cotton twill', price:null,
+  { id:'ike-jacket', name:'The Ike Jacket', cat:'Outerwear', colour:'Black', hex:'#1E1D1B', fabric:'Heavy cotton twill', price:55,
     img:'images/products/ike-jacket.jpg', look:'images/looks/look-ike.jpg', sizes:'alpha',
     desc:'A cropped Eisenhower work jacket, tailored: back darts and a waistband with button side tabs that cinch it to your waist. Point collar, two-way zip, two slant side pockets.' },
-  { id:'harrington', name:'The Suede Harrington', cat:'Outerwear', colour:'Tobacco', hex:'#8B5E3C', fabric:'Goat suede, silk lining', price:null,
+  { id:'harrington', name:'The Suede Harrington', cat:'Outerwear', colour:'Tobacco', hex:'#8B5E3C', fabric:'Goat suede, silk lining', price:225,
     img:'images/products/harrington.jpg', look:'images/looks/look-harrington-villa.jpg', sizes:'alpha',
     desc:'Shaped through the waist and cropped to sit at the belt line. Funnel collar, two-way zip, silk-lined. Effortless, a little dangerous.' },
-  { id:'field-jacket', name:'The Field Jacket', cat:'Outerwear', colour:'Olive', hex:'#5E6247', fabric:'Waxed cotton twill', price:null,
+  { id:'field-jacket', name:'The Field Jacket', cat:'Outerwear', colour:'Olive', hex:'#5E6247', fabric:'Waxed cotton twill', price:60,
     img:'images/products/field-jacket.jpg', look:'images/looks/look-field.jpg', sizes:'alpha',
     desc:'Four-pocket field jacket with an internal drawcord that cinches the waist. Stand collar, set-in sleeves, tailored shoulder. Made for long weekends away.' },
-  { id:'oxford', name:'The Oxford', cat:'Shirts & Knits', colour:'Pale blue', hex:'#B9CBE0', fabric:'Heavy cotton oxford', price:null,
-    img:'images/products/oxford.jpg', look:'images/looks/look-arrival.jpg', sizes:'alpha',
+  { id:'oxford', name:'The Oxford', cat:'Shirts & Knits', colour:'Pale blue', hex:'#B9CBE0', fabric:'Heavy cotton oxford', price:60,
+    img:'images/products/oxford.jpg', look:'images/looks/look-arrival.jpg', sizes:'alpha', women:[{src:'images/women/women-spring.jpg', contain:true, alt:'The Oxford in blue, worn by a woman with grey trousers and an ivory coat'}],
     desc:'Darted back for a tapered waist, so it tucks clean with no billowing. Button-down collar, single-needle stitching, mother-of-pearl buttons.' },
-  { id:'harbour-polo', name:'The Harbour Polo', cat:'Shirts & Knits', colour:'Cream', hex:'#EFE6D2', fabric:'Cashmere-cotton knit', price:null,
+  { id:'harbour-polo', name:'The Harbour Polo', cat:'Shirts & Knits', colour:'Cream', hex:'#EFE6D2', fabric:'Cashmere-cotton knit', price:30,
     img:'images/products/harbour-polo.jpg', look:'images/looks/look-harbour.jpg', sizes:'alpha',
     desc:'Fully-fashioned knit, shaped through the waist so it sits close, never boxy. Two-button placket. Wears under a blazer or alone on a boat.' },
-  { id:'heritage-cable', name:'The Heritage Cable', cat:'Shirts & Knits', colour:'Oatmeal', hex:'#D9CBB2', fabric:'Merino lambswool', price:null,
+  { id:'heritage-cable', name:'The Heritage Cable', cat:'Shirts & Knits', colour:'Oatmeal', hex:'#D9CBB2', fabric:'Merino lambswool', price:70,
     img:'images/products/heritage-cable.jpg', look:'images/looks/look-weekend.jpg', sizes:'alpha',
     desc:'Heavyweight cable-knit crewneck, cut trim through the body with a fitted rib hem. Thrown over an oxford, it is the off-duty uniform.' },
-  { id:'tee-white', name:'The Tenure Tee', cat:'Tees', colour:'White', hex:'#FBFAF7', fabric:'Heavyweight Supima cotton jersey', price:null,
+  { id:'tee-white', name:'The Tenure Tee', cat:'Tees', colour:'White', hex:'#FBFAF7', fabric:'Heavyweight Supima cotton jersey', price:20,
     img:'images/products/tee-white.jpg', look:'images/looks/look-harrington-studio.jpg', sizes:'alpha',
     desc:'The base layer of everything, cut like a shirt: fitted shoulder, tapered waist, sleeves that hug the arm. A neck rib that holds its shape wash after wash.' },
-  { id:'tee-grey', name:'The Tenure Tee', cat:'Tees', colour:'Heather grey', hex:'#9B9B98', fabric:'Heavyweight Supima cotton jersey', price:null,
+  { id:'tee-grey', name:'The Tenure Tee', cat:'Tees', colour:'Heather grey', hex:'#9B9B98', fabric:'Heavyweight Supima cotton jersey', price:20,
     img:'images/products/tee-grey.jpg', look:null, sizes:'alpha',
     desc:'The base layer of everything, cut like a shirt: fitted shoulder, tapered waist, sleeves that hug the arm. A neck rib that holds its shape wash after wash.' },
-  { id:'tee-navy', name:'The Tenure Tee', cat:'Tees', colour:'Navy', hex:'#22304A', fabric:'Heavyweight Supima cotton jersey', price:null,
+  { id:'tee-navy', name:'The Tenure Tee', cat:'Tees', colour:'Navy', hex:'#22304A', fabric:'Heavyweight Supima cotton jersey', price:20,
     img:'images/products/tee-navy.jpg', look:null, sizes:'alpha',
     desc:'The base layer of everything, cut like a shirt: fitted shoulder, tapered waist, sleeves that hug the arm. A neck rib that holds its shape wash after wash.' },
-  { id:'tee-black', name:'The Tenure Tee', cat:'Tees', colour:'Black', hex:'#1E1D1B', fabric:'Heavyweight Supima cotton jersey', price:null,
+  { id:'tee-black', name:'The Tenure Tee', cat:'Tees', colour:'Black', hex:'#1E1D1B', fabric:'Heavyweight Supima cotton jersey', price:20,
     img:'images/products/tee-black.jpg', look:'images/looks/look-ike.jpg', sizes:'alpha',
     desc:'The base layer of everything, cut like a shirt: fitted shoulder, tapered waist, sleeves that hug the arm. A neck rib that holds its shape wash after wash.' },
-  { id:'pleated-trouser', name:'The Pleated Trouser', cat:'Trousers', colour:'Mid grey', hex:'#8E8C88', fabric:'Wool flannel', price:null,
+  { id:'pleated-trouser', name:'The Pleated Trouser', cat:'Trousers', colour:'Mid grey', hex:'#8E8C88', fabric:'Wool flannel', price:60,
     img:'images/products/pleated-trouser.jpg', look:'images/looks/look-overcoat.jpg', sizes:'waist',
     desc:'High rise with side adjusters instead of belt loops, so the waist is clean and exact. Single forward pleat, pressed crease, tapered to the ankle.' },
-  { id:'work-trouser', name:'The Work Trouser', cat:'Trousers', colour:'Black', hex:'#1E1D1B', fabric:'Heavy cotton twill', price:null,
+  { id:'work-trouser', name:'The Work Trouser', cat:'Trousers', colour:'Black', hex:'#1E1D1B', fabric:'Heavy cotton twill', price:40,
     img:'images/products/work-trouser.jpg', look:'images/looks/look-harrington-studio.jpg', sizes:'waist',
     desc:'The everyday work pant, re-cut by a tailor: a shaped waistband with an extended tab, a mid rise and a clean straight leg with a crease that stays.' },
-  { id:'loafer', name:'The Tenure Loafer', cat:'Shoes', colour:'Chocolate', hex:'#4A3426', fabric:'Calf suede, leather sole', price:null,
+  { id:'loafer', name:'The Tenure Loafer', cat:'Shoes', colour:'Chocolate', hex:'#4A3426', fabric:'Calf suede, leather sole', price:150,
     img:'images/products/loafer.jpg', look:'images/looks/look-arrival.jpg', sizes:'shoe',
     desc:'Hand-stitched penny loafer on a Blake-stitched leather sole, built on a slim last. Worn with a suit, with flannel, without socks.' }
 ];
@@ -72,7 +72,7 @@ function cardHTML(p){
     <div class="card-media">
       <img src="${p.img}" alt="${esc(displayName(p))} in ${esc(p.colour.toLowerCase())}" loading="lazy">
       ${alt}
-      ${p.look ? '<span class="card-tag">Shop the look</span>' : ''}
+      ${p.women ? '<span class="card-tag">Men &amp; Women</span>' : (p.look ? '<span class="card-tag">Shop the look</span>' : '')}
     </div>
     <span class="card-name">${esc(p.name)}</span>
     <span class="card-meta"><span><span class="swatch" style="background:${p.hex}"></span>${esc(p.colour)}</span><span>${fmtPrice(p)}</span></span>
@@ -128,9 +128,11 @@ function openProduct(id){
   $('#dlgMsg').textContent = '';
   const imgs = [{src:p.img, alt:`${displayName(p)}, product view`}];
   if(p.look) imgs.push({src:p.look, alt:`${displayName(p)}, styled in a look`});
+  (p.women||[]).forEach(w => imgs.push(w));
+  $('#dlgWomen').hidden = !(p.women && p.women.length);
   setDialogImage(imgs[0]);
   $('#dlgThumbs').innerHTML = imgs.length > 1 ? imgs.map((im,i) =>
-    `<button data-i="${i}" aria-label="Show ${i===0?'product view':'styled look'}" aria-pressed="${i===0}"><img src="${im.src}" alt=""></button>`).join('') : '';
+    `<button data-i="${i}" aria-label="Show ${esc(im.alt)}" aria-pressed="${i===0}"><img src="${im.src}" alt=""></button>`).join('') : '';
   $('#dlgThumbs').onclick = e => {
     const b = e.target.closest('button'); if(!b) return;
     setDialogImage(imgs[+b.dataset.i]);
@@ -142,7 +144,7 @@ function openProduct(id){
   document.body.style.overflow = 'hidden';
   $('#dialogClose').focus();
 }
-function setDialogImage(im){ const el = $('#dlgImg'); el.src = im.src; el.alt = im.alt; }
+function setDialogImage(im){ const el = $('#dlgImg'); el.src = im.src; el.alt = im.alt; el.classList.toggle('contain', !!im.contain); }
 function closeProduct(){
   dialog.hidden = true;
   if($('#bagDrawer').hidden) { overlay.hidden = true; document.body.style.overflow = ''; }
@@ -181,11 +183,14 @@ function renderBag(){
   $('#bagCount').textContent = count;
   $('#bagBtn').setAttribute('aria-label', `Shopping bag, ${count} ${count===1?'item':'items'}`);
   $('#bagEmpty').hidden = count > 0;
+  const total = bag.reduce((n,i) => { const p = byId(i.id); return n + (p && p.price ? p.price * i.qty : 0); }, 0);
+  $('#bagTotal').hidden = count === 0;
+  $('#bagTotalVal').textContent = '$' + total.toLocaleString('en-US');
   $('#bagItems').innerHTML = bag.map((i,idx) => {
     const p = byId(i.id); if(!p) return '';
     return `<li class="bag-item">
       <img src="${p.img}" alt="">
-      <div><p class="bi-name">${esc(displayName(p))}</p><p>${esc(p.colour)} · Size ${esc(i.size)} · Qty ${i.qty}</p><p>${fmtPrice(p)}</p></div>
+      <div><p class="bi-name">${esc(displayName(p))}</p><p>${esc(p.colour)} · Size ${esc(i.size)} · Qty ${i.qty}</p><p>${fmtPrice(p)}${i.qty>1 ? ' each' : ''}</p></div>
       <button class="text-link" data-remove="${idx}" aria-label="Remove ${esc(displayName(p))}">Remove</button>
     </li>`;
   }).join('');
